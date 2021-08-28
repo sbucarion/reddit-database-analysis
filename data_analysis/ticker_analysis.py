@@ -81,29 +81,6 @@ def resizeTimeframe(data, time_frame = 'minute'):
             temp_lst.append([data[i][0][:-6], data[i][1]])
 
         return temp_lst
-    
-
-# def data_dataframe(data, time_frame):
-#     """Return a dataframe of with columns of all the tickers
-#     in the query, and the values for the columns are the 
-#     amount of appearance that ticker makes for the given
-#     date"""
-#     data = resizeTimeframe(data, time_frame)
-    
-#     query_dates, query_tickers = seperateQuery(data)    
-
-#     unique_tickers = findUniqueTickers(query_tickers)
-    
-#     df1 = pd.DataFrame(index = set(query_dates))
-    
-#     for ticker in unique_tickers:
-#         df1[ticker] = ticker_date_dictionary(data, ticker, set(query_dates)).values()
-
-
-#     df1 = df1[sorted(df1.columns)]
-#     df1 = df1.sort_index(ascending=True)
-    
-#     return df1
 
 
 def data_dataframe(data, time_frame):
