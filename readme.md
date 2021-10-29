@@ -1,4 +1,4 @@
-#Description
+# Description
 
 Skills: Reddit Streaming (praw), AWS Database (pymySQL), Text Analysis (nltk), Multithreading (Threading)
 
